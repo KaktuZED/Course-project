@@ -1,0 +1,41 @@
+{% extends 'main/index.html' %}
+{% block content %}
+
+<div class="reg">
+    <div class="container">
+        <div class="forms1">
+            <!--Registration-->
+            <div class="form signup">
+                <span class="title">Registration</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your email">
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="Create a password">
+                    </div>
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
+                        </div>
+                    </div>
+                    <div class="input-field button">
+                        <input type="button" value="SignUp now">
+                    </div>
+                </form>
+                <div class="login-signup">
+                    <span class="text">Already have an account?
+                        <a href="{% url 'login' %}" class="text singup-link">Login now</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

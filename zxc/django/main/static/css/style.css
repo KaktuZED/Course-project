@@ -1,0 +1,456 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial;
+    background: white;
+    background-size: cover;
+    color: white;
+    backdrop-filter: blur(8px);
+}
+
+main{
+    flex-grow: 1;
+}
+
+@media (min-width: 1401px)
+{
+  #main
+  {
+    padding: 100px 20%;
+    width: 60%;
+  }
+}
+
+@media (max-width: 1400px)
+{
+  #main
+  {
+    padding: 100px 10%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px)
+{
+  #main div
+  {
+    width: 98%!important;
+  }
+}
+
+.main-form{
+    font-size: 25px;
+    margin-right: 145px;
+    background: url(../img/bfg.jpg);
+    /*url(https://thumbs.dreamstime.com/z/business-meeting-group-partners-listening-to-colleague-54662492.jpg*/
+    background-size: cover;
+    height: 100%;
+    margin-left: 110px;
+}
+
+.header{
+    width: 100%;
+    height: 75px;
+    justify-content:center;
+    display: inline-block;
+    background: #6600FF;
+    background-size: cover;
+    font-size: 20px;
+    backdrop-filter: blur(8px);
+    text-shadow: -1px -1px 1px grey;
+}
+.header-nav{
+    display: inline-grid;
+}
+@media (min-width: 1001px)
+{
+  #header-nav
+  {
+    font-size: 3em;
+    height: 1000px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 651px)
+{
+  #header-nav
+  {
+    font-size: 2em;
+    height: 600px;
+  }
+}
+
+@media (max-width: 650px)
+{
+  #header-nav
+  {
+    font-size: 1.3em;
+    padding-top: 50%;
+    height: 500px;
+  }
+}
+
+
+@media (min-width: 1001px)
+{
+  #header
+  {
+    font-size: 3em;
+    height: 1000px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 651px)
+{
+  #header
+  {
+    font-size: 2em;
+    height: 600px;
+  }
+}
+
+@media (max-width: 650px)
+{
+  #header
+  {
+    font-size: 1.3em;
+    padding-top: 50%;
+    height: 500px;
+  }
+}
+
+.logo{
+    margin-top: 18px;
+    font-size: 35px;
+    margin-left: 120px;
+    transition: 1s; /* Время эффекта */
+    text-align: center;
+}
+
+@media (min-width: 1401px)
+{
+  #logo
+  {
+    padding: 100px 20%;
+    width: 60%;
+  }
+}
+
+@media (max-width: 1400px)
+{
+  #logo
+  {
+    padding: 100px 10%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px)
+{
+  #logo
+  {
+    width: 98%!important;
+  }
+}
+.logo:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+
+.header-nav-list{
+    padding: 30px 145px 45px 125px;
+    display: flex;
+    align-items: center;
+    right:0;
+    position: absolute;
+}
+
+@media (min-width: 1001px)
+{
+  #header-nav-list
+  {
+    font-size: 3em;
+    height: 1000px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 651px)
+{
+  #header-nav-list
+  {
+    font-size: 2em;
+    height: 600px;
+  }
+}
+
+@media (max-width: 650px)
+{
+  #header-nav-list
+  {
+    font-size: 0.3em;
+    padding-top: 50%;
+    height: 500px;
+  }
+}
+
+.header-nav-list-text + .header-nav-list-text{
+    margin-left: 42px;
+}
+
+.header-nav-list-text{
+    position: relative;
+}
+
+
+.header-nav-list-text ::after{
+    left:0;
+    width: 0%;
+    bottom:-5px;
+
+    position: absolute;
+    display: block;
+    content: "";
+
+    height: 2px;
+    background-color: lightblue;
+
+    transition: width 0.3s ease-in;
+}
+
+.header-nav-list-text:hover ::after{
+    width: 100%;
+}
+
+.header-nav-list-text.active::after{
+    left:0;
+    width: 100%;
+    bottom:-5px;
+
+    position: absolute;
+    display: block;
+    content: "";
+
+    height: 2px;
+    background-color: lightblue;
+
+}
+
+
+footer{
+    flex-shrink: 0;
+    background-color: #333333;
+    height: 150px;
+}
+
+@media (min-width: 1001px)
+{
+  #footer
+  {
+    font-size: 3em;
+    height: 1000px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 651px)
+{
+  #footer
+  {
+    font-size: 2em;
+    height: 600px;
+  }
+}
+
+@media (max-width: 650px)
+{
+  #footer
+  {
+    font-size: 1.3em;
+    padding-top: 50%;
+    height: 500px;
+  }
+}
+
+.footer-list{
+    padding: 30px 145px 0px 125px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+}
+
+.programs-list{
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    text-shadow:    -1px -1px 1px silver;
+}
+
+@media (min-width: 1001px)
+{
+  #programs-list
+  {
+    font-size: 3em;
+    height: 1000px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 651px)
+{
+  #programs-list
+  {
+    font-size: 2em;
+    height: 600px;
+  }
+}
+
+@media (max-width: 650px)
+{
+  #programs-list
+  {
+    font-size: 1.3em;
+    padding-top: 50%;
+    height: 500px;
+  }
+}
+
+.programs-inf:hover {background: #d98c18; color:white}
+.programs-inf:before {
+
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #d98c18;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+}
+
+.programs-inf{
+    color: black;
+    display: flex;
+    margin-bottom: 30px;
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+    height: 20%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 3px 6px black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+@media (min-width: 1001px)
+{
+  #programs-inf
+  {
+    font-size: 3em;
+    height: 1000px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 651px)
+{
+  #programs-inf
+  {
+    font-size: 2em;
+    height: 600px;
+  }
+}
+
+@media (max-width: 650px)
+{
+  #programs-inf
+  {
+    font-size: 1.3em;
+    padding-top: 50%;
+    height: 500px;
+  }
+}
+
+.programs-inf h1{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+
+
+.three { background: url(../img/vvsd.jpg);top: 50px; left: 150px; z-index: 5; height: 300px; width: 400px; background-size: cover;}
+.seven { background: url(../img/nmv.jpg);left: +120px; top: 25px; z-index: 2;height: 300px; width: 400px; background-size: cover;}
+.nark { background: url(../img/cwc.jpg);left: +120px; top: 25px; z-index: 2;height: 300px; width: 400px; background-size: cover;}
+.ace { background: url(../img/hai.jpg);left: +295px; z-index: 1; height: 300px; width: 400px; background-size: cover;}
+.card IMG { position: relative; }
+.seven { left: +450px; top: -10px; }
+.ace { left: +800px; top:-30px; }
+.nark { left: +1100px; top:-600px; }
+
+@media (max-width: 700px)
+{
+  #main .img
+  {
+    width: 80%!important;
+    margin-right: 0!important;
+    margin-left: 10%!important;
+  }
+}
+
+.rounded {
+    counter-reset: li;
+    list-style: none;
+    font: 14px "Trebuchet MS", "Lucida Sans";
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    padding-left: 50px;
+    padding-right: 140px;
+    cursor: pointer;
+
+}
+.rounded .who{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: .5em;
+    transition: .3s ease-out;
+    font-size: 17px;
+
+}
+.rounded .who:hover {background: #d98c18; color:white}
+.rounded .who:hover:before {transform: rotate(360deg);}
+.rounded .who:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #d98c18;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+
+.questions{
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #dfdae0;
+    text-shadow: 2px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+
+}
+

@@ -1,0 +1,17 @@
+{% extends 'main/index.html' %}
+{% block content %}
+<div>
+    <ul class="programs-list">
+        {% for p in posts%}
+        <a href="{{ p.get_absolute_url }}">
+        <li class="programs-inf">
+                <h1>{{p.courses_name}}</h1>
+                <p>{{p.courses_description}}</p>
+        </li>
+        </a>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
+
+<!--% url 'prog' p.pk %-->

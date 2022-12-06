@@ -1,0 +1,38 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/Reset.css' %}">
+    <link rel="stylesheet" href="{% static 'main/static/css/style.css' %}">
+    <title>Employ</title>
+</head>
+<body>
+<header class="header">
+    <nav class="header-nav">
+        <a class="logo" href="{% url 'home' %}">Employ</a>
+        <ul class="header-nav-list">
+            <li class="header-nav-list-text"><a href="{% url 'home' %}" title="Главная">Главная</a></li>
+            <li class="header-nav-list-text"><a href="#" title="Контакты">Контакты</a></li>
+            <li class="header-nav-list-text"><a href="{% url 'quest' %}" title="Ответы на вопросы">Ответы на вопросы</a></li>
+            <li class="header-nav-list-text"><a href="{% url 'prog' %}" title="Программы обучения">Подобрать программу</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <form class="main-form">
+    {% block content %}
+
+    {% endblock %}
+    </form>
+</main>
+<footer class="footer">
+    <div class="footer-info">
+         <ul class="footer-list">
+            <li class="footer-list-text"><a href="#" title="Общая информация">Общая информация</a><br>Lorem ipsum dolor sit amis doloremque eveniet molestias necessitatibus omnis optio repudiandae rerum.</li>
+            <li class="footer-list-text"><a href="#" title="Аккаунт">Аккаунт</a><br>Lorem ipsum dolor sit amet, consectetur adipisicinc id laboriosam officiis perspiciatis possimus praesentium vel?</li>
+            <li class="footer-list-text"><a href="#" title="Разделы">Разделы</a><br>Lorem ipsum dolor sit amet, consecfacere nostrum vero! Aliquid ea ipsam iste omnis recusandae?</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
